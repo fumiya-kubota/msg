@@ -1,0 +1,79 @@
+@media print {
+    html, body {
+        width: 148mm;
+        height: 100mm;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+div, ul, li, p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@page {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 148mm;
+    height: 100mm;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: solid 2px #555;
+    position: relative;
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        width: 100mm;
+        .main {
+            .select {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 40mm);
+                justify-content: center;
+                text-justify: inter-ideograph;
+                h1 {
+                    font-size: 5mm;
+                    font-weight: normal;
+                    grid-column: 1 / 2;
+                    grid-row: 1;
+                    text-align: center;
+                }
+            }
+            p {
+                margin-top: 5mm;
+                font-size: 3mm;
+                text-align: center;
+            }
+        }
+        .sub {
+            margin-top: 8mm;
+            font-size: 3mm;
+            @row-height: 10mm;
+            ul {
+                li {
+                    p {
+                        height: @row-height;
+                        line-height: @row-height;
+                        width: 9mm;
+                        text-align: justify;
+                        -moz-text-align-last: justify;
+                        text-align-last: justify;
+                    }
+                    border-bottom: 1px solid #aaa;
+                }
+            }
+            .message {
+                line-height: @row-height;
+            }
+        }
+    }
+}

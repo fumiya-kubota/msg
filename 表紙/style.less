@@ -1,0 +1,82 @@
+@media print {
+    html, body {
+        width: 148mm;
+        height: 210mm;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+div, ul, li, p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@page {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 148mm;
+    height: 210mm;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    .back {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        width: 144mm;
+        height: 144mm;
+        background-image: url('./background.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .text {
+        color: #333;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        .invitation {
+            border-bottom: solid 0.5mm black;
+            font-size: 18mm;
+            text-align: center;
+        }
+        .date {
+            margin-top: 5mm;
+            font-size: 8mm;
+            text-align: center;
+        }
+    }
+}
+
+.risque {
+    font-family: 'Risque', cursive;
+}
+
+.sofia {
+    font-family: 'Sofia', cursive;
+}
+
+.berkshire {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.bondon {
+    font-family: 'Bonbon', cursive;
+}
+
+.sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.fontdiner {
+    font-family: 'Fontdiner Swanky', cursive;
+}
