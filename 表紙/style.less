@@ -1,7 +1,7 @@
-@media print {
+@media print and (min-resolution: 200dpi) {
     html, body {
-        width: 148mm;
-        height: 210mm;
+        width: 105mm;
+        height: 148mm;
         margin: 0;
         padding: 0;
     }
@@ -19,8 +19,8 @@ div, ul, li, p, h1, h2, h3, h4, h5 {
 }
 
 html, body {
-    width: 148mm;
-    height: 210mm;
+    width: 105mm;
+    height: 148mm;
     margin: 0;
     padding: 0;
 }
@@ -29,14 +29,12 @@ body {
     position: relative;
     .back {
         position: absolute;
-        top: 50%;
         left: 50%;
-        transform : translate(-50%,-50%);
-        width: 144mm;
-        height: 144mm;
-        background-image: url('./background.png');
-        background-size: contain;
-        background-repeat: no-repeat;
+        top: 50%;
+        margin-top: -52.5mm;
+        transform: translate(-50%);
+        width: 105mm;
+        height: 105mm;
     }
     .text {
         color: #333;
@@ -46,12 +44,12 @@ body {
         transform : translate(-50%,-50%);
         .invitation {
             border-bottom: solid 0.5mm black;
-            font-size: 18mm;
+            font-size: 13mm;
             text-align: center;
         }
         .date {
             margin-top: 5mm;
-            font-size: 8mm;
+            font-size: 5mm;
             text-align: center;
         }
     }

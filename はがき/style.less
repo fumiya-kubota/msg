@@ -1,9 +1,13 @@
 @media print {
-    html, body {
-        width: 148mm;
-        height: 100mm;
-        margin: 0;
-        padding: 0;
+    html {
+        width: 1165px;
+        height: 787px;
+        box-sizing: border-box;
+    }
+    body {
+        width: 1165px;
+        height: 787px;
+        box-sizing: border-box;
     }
 }
 
@@ -16,32 +20,58 @@ div, ul, li, p, h1, h2, h3, h4, h5 {
 @page {
     margin: 0;
     padding: 0;
+    size: 1165px 787px;
 }
 
 html, body {
-    width: 148mm;
-    height: 100mm;
     margin: 0;
     padding: 0;
 }
 
+html {
+    width: 1165px;
+    height: 787px;
+    box-sizing: border-box;
+}
 body {
-    border: solid 2px #555;
+    width: 1165px;
+    height: 787px;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    color: #333;
     position: relative;
     .content{
         position: absolute;
-        top: 50%;
+        margin-top: 32.25px;
         left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        width: 100mm;
+        height: 722.5px;
+        transform: translateX(-50%);
+        width: 200mm;
         .main {
+            h1 {
+                font-size: 10mm;
+                font-weight: normal;
+                grid-column: 1 / 2;
+                grid-row: 1;
+                text-align: center;
+                font-weight: bold;
+            }
             .select {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, 40mm);
+                grid-template-columns: repeat(auto-fit, 80mm);
                 justify-content: center;
                 text-justify: inter-ideograph;
-                h1 {
-                    font-size: 5mm;
+                margin-top: 2mm;
+                h2 {
+                    font-size: 10mm;
                     font-weight: normal;
                     grid-column: 1 / 2;
                     grid-row: 1;
@@ -49,21 +79,21 @@ body {
                 }
             }
             p {
-                margin-top: 5mm;
-                font-size: 3mm;
+                margin-top: 10mm;
+                font-size: 6mm;
                 text-align: center;
             }
         }
         .sub {
-            margin-top: 8mm;
-            font-size: 3mm;
-            @row-height: 10mm;
+            margin-top: 6mm;
+            font-size: 6mm;
+            @row-height: 20mm;
             ul {
                 li {
                     p {
                         height: @row-height;
                         line-height: @row-height;
-                        width: 9mm;
+                        width: 36mm;
                         text-align: justify;
                         -moz-text-align-last: justify;
                         text-align-last: justify;
@@ -73,6 +103,8 @@ body {
             }
             .message {
                 line-height: @row-height;
+                height: 40mm;
+
             }
         }
     }

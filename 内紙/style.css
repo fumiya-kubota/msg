@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
 @import url(https://fonts.googleapis.com/earlyaccess/sawarabigothic.css);
 
+@media print and (min-resolution: 200dpi) {
+
+}
+
 @page {
-    size: A5;
+    size: 205mm 145mm;
     margin: 0;
 }
 
@@ -12,8 +16,8 @@ div, p, h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
-    width: 210mm;
-    height: 148mm;
+    width: 205mm;
+    height: 144.9mm;
     color: #333;
 }
 
@@ -26,8 +30,8 @@ body {
 .sheet {
     background-image: url('./tranp.png');
     background-size: contain;
-    width: 210mm;
-    height: 148mm;
+    width: 205mm;
+    height: 144.9mm;
     page-break-after: always;
 }
 .sheet > div {
@@ -35,13 +39,13 @@ body {
 }
 
 .left {
-    width: 105mm;
-    height: 148mm;
+    width: 102.5mm;
+    height: 144.9mm;
 }
 
 .right {
-    width: 105mm;
-    height: 148mm;
+    width: 102.5mm;
+    height: 144.9mm;
 }
 
 .left {
@@ -53,7 +57,8 @@ body {
     width: 95mm;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    margin-top: -175px;
+    /* transform: translateY(-50%); */
 }
 
 h1 {
@@ -101,7 +106,8 @@ h1 {
     height: 350px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    margin-top: -175px;
+    /* transform: translateY(-50%); */
 
 }
 
