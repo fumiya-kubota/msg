@@ -1,7 +1,7 @@
 @media print and (min-resolution: 200dpi) {
     html, body {
-        width: 105mm;
-        height: 148mm;
+        width: 210mm;
+        height: 147.99mm;
         margin: 0;
         padding: 0;
     }
@@ -19,38 +19,47 @@ div, ul, li, p, h1, h2, h3, h4, h5 {
 }
 
 html, body {
-    width: 105mm;
-    height: 148mm;
+    width: 210mm;
+    height: 147.99mm;
     margin: 0;
     padding: 0;
 }
 
 body {
-    position: relative;
-    .back {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-top: -52.5mm;
-        transform: translate(-50%);
+    .seat {
         width: 105mm;
-        height: 105mm;
+        height: 147.99mm;
+        float: left;
+        display: flex; /* 子要素をflexboxで揃える */
+        flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+        justify-content: center; /* 子要素をflexboxにより中央に配置する */
+        align-items: center;  /* 子要素をflexboxにより中央に配置する */
     }
-    .text {
-        color: #333;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform : translate(-50%,-50%);
-        .invitation {
-            border-bottom: solid 0.5mm black;
-            font-size: 13mm;
-            text-align: center;
-        }
-        .date {
-            margin-top: 5mm;
-            font-size: 5mm;
-            text-align: center;
+    .icon {
+        width: 13.8mm;
+        height: 20.1mm;
+    }
+    .back {
+        width: 90mm;
+        height: 90mm;
+        background-image: url('background.png');
+        background-size: contain;
+        display: flex; /* 子要素をflexboxで揃える */
+        flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+        justify-content: center; /* 子要素をflexboxにより中央に配置する */
+        align-items: center;  /* 子要素をflexboxにより中央に配置する */
+        .text {
+            color: #333;
+            .invitation {
+                border-bottom: solid 0.5mm black;
+                font-size: 12mm;
+                text-align: center;
+            }
+            .date {
+                margin-top: 4mm;
+                font-size: 6mm;
+                text-align: center;
+            }
         }
     }
 }

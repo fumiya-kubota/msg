@@ -28,7 +28,7 @@ body {
 }
 
 .sheet {
-    background-image: url('./tranp.png');
+    /* background-image: url('./tranp.png'); */
     background-size: contain;
     width: 205mm;
     height: 144.9mm;
