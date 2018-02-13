@@ -55,9 +55,9 @@ body {
     align-items: center;
 }
 
-.left > .text {
-    height: 372px;
+.left > .text, .right > .info {
     width: 95mm;
+    height: 389px;
 }
 
 h1 {
@@ -102,10 +102,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.right > .info {
-    width: 95mm;
-    height: 372px;
 }
 
 .right > .info > div {
