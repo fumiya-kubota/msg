@@ -49,16 +49,15 @@ body {
 }
 
 .left {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .left > .text {
-    height: 350px;
+    height: 372px;
     width: 95mm;
-    position: absolute;
-    top: 50%;
-    margin-top: -175px;
-    /* transform: translateY(-50%); */
 }
 
 h1 {
@@ -99,16 +98,14 @@ h1 {
 }
 
 .right {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .right > .info {
     width: 95mm;
-    height: 350px;
-    position: absolute;
-    top: 50%;
-    margin-top: -175px;
-    /* transform: translateY(-50%); */
-
+    height: 372px;
 }
 
 .right > .info > div {
@@ -145,9 +142,18 @@ h1 {
     margin-top: 1.5mm;
 }
 
-.right > .info > .bikou {
-    margin-top: 7mm;
+.right > .info > .bessi {
+    margin-top: 0mm;
     font-size: 2.3mm;
+}
+
+.right > .info > .bikou {
+    margin-top: 5mm;
+    font-size: 2.3mm;
+}
+
+.right > .info > .bikou > div {
+    margin-top: 3mm;
 }
 
 .right > .info > .limit {
@@ -165,3 +171,6 @@ h1 {
     font-weight: normal;
 }
 
+.heart {
+    color: red;
+}
