@@ -1,0 +1,44 @@
+@media print and (min-resolution: 200dpi) {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+div, ul, li, p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@page {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    .frame {
+        width: 210mm;
+        height: 297mm;
+        box-sizing: border-box;
+        padding-left: 10mm;
+        padding-top: 10mm;
+        .image {
+            display: block;
+            float: left;
+            margin-right: 10mm;
+            margin-bottom: 10mm;
+            width: 30mm;
+            height: 30mm;
+        }
+    }
+}

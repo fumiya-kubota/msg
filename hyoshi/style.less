@@ -1,7 +1,12 @@
 @media print and (min-resolution: 200dpi) {
+    @page {
+        size: A5;
+    }
     html, body {
         width: 210mm;
         height: 148mm;
+    }
+    div {
         margin: 0;
         padding: 0;
     }
@@ -26,30 +31,26 @@ html, body {
 }
 
 body {
-    .right {
-        margin-left: 5mm;
-    }
     .seat {
-        width: 102.5mm;
+        width: 105mm;
         height: 148mm;
         box-sizing: border-box;
-
         float: left;
         display: flex; /* 子要素をflexboxで揃える */
         flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
         justify-content: center; /* 子要素をflexboxにより中央に配置する */
         align-items: center;  /* 子要素をflexboxにより中央に配置する */
+        border: 1px solid black;
     }
     .icon {
         width: 13.8mm;
         height: 20.1mm;
     }
     .back {
-        display: block;
         width: 90mm;
         height: 90mm;
         background-image: url('background.png');
-        background-size: cover;
+        background-size: contain;
         display: flex; /* 子要素をflexboxで揃える */
         flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
         justify-content: center; /* 子要素をflexboxにより中央に配置する */

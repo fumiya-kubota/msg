@@ -1,0 +1,53 @@
+@media print and (min-resolution: 350dpi) {
+    html, body {
+        width: 148mm;
+        height: 210mm;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+html, body {
+    width: 148mm;
+    height: 210mm;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+        h1 {
+            font-size: 4mm;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 3mm;
+            text-align: left;
+            margin-left: 25mm;
+        }
+
+        .person {
+            font-size: 1mm;
+            text-align: right;
+        }
+
+        .otachi {
+            font-size: 1mm;
+            text-align: center;
+            margin-top: 15mm;
+            margin-bottom: 0;
+        }
+
+        .space {
+            display: inline-block;
+            width: 4mm;
+        }
+    }
+}

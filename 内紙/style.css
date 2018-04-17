@@ -2,7 +2,10 @@
 @import url(https://fonts.googleapis.com/earlyaccess/sawarabigothic.css);
 
 @media print and (min-resolution: 200dpi) {
-
+    @page {
+        size: 205mm 145mm;
+        margin: 0;
+    }
 }
 
 @page {
@@ -87,6 +90,8 @@ h1 {
 
 .left > .text > .seiku {
     margin-top: 3.4mm;
+    font-style: italic;
+    color: gray;
 }
 
 .left > .text > .name {
